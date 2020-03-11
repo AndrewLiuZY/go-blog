@@ -4,7 +4,7 @@ import (
 	"github.com/gin-gonic/gin"
 	"github.com/unknwon/com"
 
-	"github.com/andrewliuzy/gin-blog/pkg/setting"
+	"gin-blog/pkg/setting"
 )
 
 func GetPage(c *gin.Context) int {
