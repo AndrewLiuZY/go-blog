@@ -9,8 +9,8 @@ import (
 	"os/signal"
 	"time"
 
-	"gin-blog/pkg/setting"
-	"gin-blog/routers"
+	"github.com/andrewliuzy/gin-blog/pkg/setting"
+	"github.com/andrewliuzy/gin-blog/routers"
 )
 
 func main() {
