@@ -4,10 +4,10 @@ import (
 	"github.com/gin-gonic/gin"
 
 	_ "gin-blog/docs"
-	"gin-blog/middleware/jwt"
-	"gin-blog/pkg/setting"
-	"gin-blog/routers/api"
-	v1 "gin-blog/routers/api/v1"
+	"github.com/andrewliuzy/gin-blog/middleware/jwt"
+	"github.com/andrewliuzy/gin-blog/pkg/setting"
+	"github.com/andrewliuzy/gin-blog/routers/api"
+	v1 "github.com/andrewliuzy/gin-blog/routers/api/v1"
 
 	ginSwagger "github.com/swaggo/gin-swagger"
 	"github.com/swaggo/gin-swagger/swaggerFiles"

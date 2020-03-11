@@ -7,11 +7,11 @@ import (
 	"github.com/gin-gonic/gin"
 	"github.com/unknwon/com"
 
-	"gin-blog/models"
-	"gin-blog/pkg/e"
-	"gin-blog/pkg/logging"
-	"gin-blog/pkg/setting"
-	"gin-blog/pkg/util"
+	"github.com/andrewliuzy/gin-blog/models"
+	"github.com/andrewliuzy/gin-blog/pkg/e"
+	"github.com/andrewliuzy/gin-blog/pkg/logging"
+	"github.com/andrewliuzy/gin-blog/pkg/setting"
+	"github.com/andrewliuzy/gin-blog/pkg/util"
 )
 
 func GetArticle(c *gin.Context) {
