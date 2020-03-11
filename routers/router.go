@@ -3,7 +3,7 @@ package routers
 import (
 	"github.com/gin-gonic/gin"
 
-	_ "gin-blog/docs"
+	_ "github.com/andrewliuzy/gin-blog/docs"
 	"github.com/andrewliuzy/gin-blog/middleware/jwt"
 	"github.com/andrewliuzy/gin-blog/pkg/setting"
 	"github.com/andrewliuzy/gin-blog/routers/api"
