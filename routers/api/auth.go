@@ -6,10 +6,10 @@ import (
 	"github.com/astaxie/beego/validation"
 	"github.com/gin-gonic/gin"
 
-	"github.com/andrewliuzy/gin-blog/models"
-	"github.com/andrewliuzy/gin-blog/pkg/e"
-	"github.com/andrewliuzy/gin-blog/pkg/logging"
-	"github.com/andrewliuzy/gin-blog/pkg/util"
+	"gin-blog/models"
+	"gin-blog/pkg/e"
+	"gin-blog/pkg/logging"
+	"gin-blog/pkg/util"
 )
 
 type auth struct {
