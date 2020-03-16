@@ -6,4 +6,3 @@ RUN go build .
 
 EXPOSE 8000
 ENTRYPOINT ["./go-gin-example"]
-a
