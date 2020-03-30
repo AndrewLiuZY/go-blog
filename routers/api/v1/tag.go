@@ -13,6 +13,10 @@ import (
 	"gin-blog/pkg/util"
 )
 
+func init() {
+	setting.Setup()
+}
+
 //GetTags 获取多个文章标签
 func GetTags(c *gin.Context) {
 	name := c.Query("name")
@@ -32,7 +36,7 @@ func GetTags(c *gin.Context) {
 
 	code := e.SUCCESS
 
-	data["lists"] = models.GetTags(util.GetPage(c), setting.PageSize, maps)
+	data["lists"] = models.GetTags(util.GetPage(c), setting.AppSetting.PageSize, maps)
 	data["total"] = models.GetTagTotal(maps)
 
 	c.JSON(http.StatusOK, gin.H{

@@ -13,6 +13,10 @@ import (
 	"github.com/swaggo/gin-swagger/swaggerFiles"
 )
 
+func init() {
+	setting.Setup()
+}
+
 func InitRouter() *gin.Engine {
 	r := gin.New()
 
@@ -20,7 +24,7 @@ func InitRouter() *gin.Engine {
 
 	r.Use(gin.Recovery())
 
-	gin.SetMode(setting.RunMode)
+	gin.SetMode(setting.ServerSetting.RunMode)
 
 	r.GET("/auth", api.GetAuth)
 	r.GET("/swagger/*any", ginSwagger.WrapHandler(swaggerFiles.Handler))
