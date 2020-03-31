@@ -3,6 +3,7 @@ module gin-blog
 go 1.13
 
 require (
+	github.com/EDDYCJY/go-gin-example v0.0.0-20200322073714-2b22b57dfce9
 	github.com/alecthomas/template v0.0.0-20190718012654-fb15b899a751
 	github.com/astaxie/beego v1.12.1
 	github.com/dgrijalva/jwt-go v3.2.0+incompatible
