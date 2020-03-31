@@ -28,7 +28,7 @@ func main() {
 		log.Printf("Actual pid is %d", syscall.Getpid())
 	}
 
-	log.Printf("Listening port:", string(setting.ServerSetting.HttpPort))
+	log.Printf("Listening port: %d", setting.ServerSetting.HttpPort)
 	err := server.ListenAndServe()
 	if err != nil {
 		log.Printf("Server err: %v", err)
